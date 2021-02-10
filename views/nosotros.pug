@@ -1,0 +1,32 @@
+extends ./layout/index
+//- Importante en los block es indentar para que sepa que parte del codigo pertenece a un block especifico. p es equivalente a <p></p> y asi todo el html. img src="" en pug es img(src="")
+block contenido
+    main.container.mt-5
+        .row
+            .col-md-5
+                img(src="img/nosotros.jpg", alt="imagen sobre nosotros", class="img-fluid")
+            .col-md-7
+                h1 #{pagina}
+                blockquote Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam ipsum eaque explicabo cupiditate perferendis labore, possimus delectus reiciendis dicta! Delectus laboriosam accusamus excepturi aliquam, saepe architecto beatae reprehenderit quaerat. Pariatur.
+
+                p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt doloribus culpa, perspiciatis quia corrupti quod doloremque hic odit sunt id et, similique consequuntur voluptates debitis reprehenderit. Sunt repellendus velit ut.
+
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, in officiis? Officiis fuga iure praesentium asperiores dolor similique consectetur in, obcaecati quibusdam tenetur, et illum facere eaque quam ea excepturi?
+
+    .listado-iconos
+        .container.mt-5.py-5.text-center
+            .row
+                .col-md-4
+                    img(src="img/icono_seguridad.svg", alt="icono seguridad", class="img-fluid mb-4")
+                    h2.mb-4 Seguridad
+                    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, voluptatibus laboriosam? Ut sunt quod similique odio earum eos, cupiditate, sint vel delectus minus rem libero commodi quam minima labore excepturi.
+                
+                .col-md-4
+                    img(src="img/icono_destinos.svg", alt="icono destinos", class="img-fluid mb-4")
+                    h2.mb-4 Mejores Destinos
+                    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, voluptatibus laboriosam? Ut sunt quod similique odio earum eos, cupiditate, sint vel delectus minus rem libero commodi quam minima labore excepturi.
+                
+                .col-md-4
+                    img(src="img/icono_precios.svg", alt="icono precios", class="img-fluid mb-4")
+                    h2.mb-4 Los Mejores Precios
+                    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, voluptatibus laboriosam? Ut sunt quod similique odio earum eos, cupiditate, sint vel delectus minus rem libero commodi quam minima labore excepturi.

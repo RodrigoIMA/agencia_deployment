@@ -1,0 +1,34 @@
+extends ./layout/index
+//- con extends me traigo el block y el block, en este caso contenido, es aquel codigo que se muestra en todos los archivos de rutas y para no escribir el mismo codigo culiao en todos los archivos, pug da la posibilidad de crear el block, asi cambio la wea una vez si es que tengo que cambiarla en vez de ir por todos los archivos culiaod y ña csm ewando combiando la wea culia.
+//- las variables se pueden poner por ej h1= pico o h1 #{pico}, son la misma wea
+block slider 
+    .slider 
+        h1 Rio de janeiro 
+        em aventura
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, officia saepe dignissimos ducimus soluta maxime molestias perspiciatis quasi dicta, nulla reiciendis eveniet et nobis possimus deleniti cumque. Vitae, ut expedita. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, consequuntur officiis veniam temporibus dolorum quae voluptas repudiandae neque! Architecto necessitatibus neque facilis maiores beatae. Nulla omnis molestiae totam assumenda temporibus!
+                p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere odit accusamus, nihil a labore officia neque. Incidunt autem atque ratione fugiat a error aut, cum debitis quos earum ut? Nulla.
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt=" Imagen nosotros", class="img-fluid")
+        
+        include ./layout/bloque_viajes
+    
+    .descuento
+        .container
+            .row 
+                .col-md-6 
+                    .contenido 
+                        h3 5% de Descuento 
+                        p.titulo Viaje a Canada 
+                        p.fecha 20 de Marzo de 2022 - 28 de Marzo de 2022
+                        p.precio $2,500 USD
+    
+    .container 
+        h2.mt-5.text-center Testimoniales
+        include ./layout/bloque_testimoniales
+
+
